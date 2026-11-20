@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI PS5 trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header">
+  <h1>Leonida Trophy Guide</h1>
+  <p id="subtitle">Every PlayStation 5 trophy of Grand Theft Auto VI — a checklist, a roadmap to the Platinum, and a cited guide for each trophy. Works fully offline.</p>
+  <div id="progress-wrap">
+    <div id="progress-bar"><div id="progress-fill"></div></div>
+    <p id="progress">0 of 55 earned</p>
+    <p id="grade-breakdown">Platinum 0/1 · Gold 0/2 · Silver 0/6 · Bronze 0/46</p>
+  </div>
+</header>
+<nav id="view-tabs" aria-label="Views">
+  <button id="tab-checklist" type="button" data-view="checklist">Checklist</button>
+  <button id="tab-roadmap" type="button" data-view="roadmap">Roadmap to Platinum</button>
+  <button id="tab-missables" type="button" data-view="missables">Missables</button>
+</nav>
+<div id="controls">
+  <label id="search-label">Search <input id="search" type="search" placeholder="Trophy name or guide text"></label>
+  <div id="kind-filters" aria-label="Filter by kind"></div>
+  <label id="grade-filter-label">Grade <select id="grade-filter"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label id="earned-filter-label">Earned <select id="earned-filter"><option value="all">All</option><option value="earned">Earned</option><option value="not-earned">Not earned</option></select></label>
+  <label id="spoiler-toggle-label"><input id="spoiler-toggle" type="checkbox" checked> Hide story spoilers</label>
+  <button id="export-progress" type="button">Export progress</button>
+  <label id="import-progress-label">Import progress <input id="import-progress" type="file" accept="application/json"></label>
+</div>
+<main>
+  <section id="view-checklist" aria-label="Trophy checklist">
+    <p id="checklist-note">Tick a trophy off and it stays ticked in this browser. Story trophies stay hidden while spoilers are on.</p>
+    <p id="online-note">Online: 0 trophies need online play — every one of the 55 is earned offline.</p>
+    <ul id="trophy-list"></ul>
+  </section>
+  <section id="view-roadmap" aria-label="Roadmap to the Platinum" hidden>
+    <h2>Roadmap to the Platinum</h2>
+    <p id="roadmap-facts">About 200 hours · Difficulty 4/10 · 1 playthrough · 0 online trophies · 1 possibly missable trophy · 4 trophies with no confirmed method yet · No mission replay, so keep a save at the start and end of each chapter (15 manual save slots) · Cheats disable trophies and saving.</p>
+    <div id="roadmap-stages"></div>
+    <h3>100% Completion counters</h3>
+    <p id="counters-note">The counters below track the A Long Road checklist. Use the − and + steppers; they save in this browser.</p>
+    <div id="collectible-counters"></div>
+  </section>
+  <section id="view-missables" aria-label="Missables" hidden>
+    <h2>Missables</h2>
+    <p id="missables-note">Only 1 of the 55 trophies can be missed, and 4 more have no confirmed method yet, so they cannot be judged missable. The other 50 are not missable — each trophy's detail panel answers “Can it be missed?” directly.</p>
+    <div id="missables-list"></div>
+  </section>
+  <aside id="detail" aria-label="Trophy guide"></aside>
+</main>
+<footer id="site-footer">
+  <p>Guides are written in our own words. Every fact in a guide names the source it came from, and advice that is our own is flagged as not yet checked in the game. Official trophy names, descriptions and grades are shown as PlayStation publishes them. No Rockstar logo, artwork or game screenshots.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
